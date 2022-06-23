@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+a{
+    color: #000000;
+}
+.cani{
+
+    border-radius: 100px;
+    margin-left: 300px;
+    margin-top: -300px;
+    scale: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+
+.bg_parent{
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    /*background: linear-gradient(90deg, #6c2416 10%, #80583a 90%)*/
+    background: -webkit-linear-gradient(#da4c2f, #da9866);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 300px;
+}
+.banner{
+
+    border-radius: 100px;
+    margin-left: 300px;
+    margin-top: -300px;
+    scale: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(19, 19, 176) 10%, rgb(185, 13, 13) 90%);
+
+}
+
+.bg_croc{
+
+    width: 1536px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bg_croc_cani{
+
+    width: 1536px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+.navbar{
+    background: linear-gradient(145deg, rgb(215, 85, 9) 0%, rgb(184, 2, 2) 50%, rgb(27, 0, 177) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 999;
+
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto ;
+    padding: 0 50px;
+}
+#navbar_logo{
+    background-color: red;
+    background-image: linear-gradient(180deg, rgb(255, 8, 68) 0%, rgb(255, 177, 25) 100%); 
+    background-size: 100%;
+    background-clip: none;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar_item{
+    height: 80px;
+}
+.navbar_links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+.navbutt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: white;
+}
+.navbutt:hover{
+    background: rgb(27, 0, 177);
+    transition: all 0.3s ease;
+}
+.navbar_links:hover{
+
+    color: rgb(255, 94, 0)/*linear-gradient(145deg, rgb(215, 85, 9) 0%, rgb(184, 2, 2) 50%, rgb(27, 0, 177) 100%)*/  ;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px){
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .navbar_menu.active{
+          background: #131313;
+          top: 100%;
+          opacity: 1;
+          transition: all 0.5s ease;
+          z-index: 99;
+          height: 50vh;
+          font-size: 1.6rem;
+    }
+
+    #navbar_logo{
+        padding-left: 0px;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar_item {
+        width: 100%;
+    }
+
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    /*#mobile-menu*/
+}
